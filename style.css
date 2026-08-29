@@ -1,14 +1,4 @@
 ```css
-/* ==================================================
-   WEBSITE DESA SEBURING
-   STYLE.CSS LENGKAP
-================================================== */
-
-
-/* ==================================================
-   RESET
-================================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -27,63 +17,49 @@ body {
 }
 
 
-/* ==================================================
+/* =========================
    NAVBAR
-================================================== */
+========================= */
 
 header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-
     z-index: 1000;
 
-    background: rgba(255, 255, 255, 0.93);
-
+    background: rgba(255,255,255,0.94);
     backdrop-filter: blur(12px);
 
-    box-shadow:
-        0 5px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
 }
 
 .navbar {
     max-width: 1200px;
-
     margin: auto;
-
     padding: 17px 25px;
 
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 }
 
 .logo {
     font-size: 23px;
-
     font-weight: bold;
-
     color: #28734b;
 }
 
 .nav-menu {
     display: flex;
-
     gap: 20px;
-
     list-style: none;
 }
 
 .nav-menu a {
     color: #26392d;
-
     text-decoration: none;
-
     font-weight: 600;
-
     transition: 0.3s;
 }
 
@@ -93,56 +69,44 @@ header {
 
 .menu-btn {
     display: none;
-
     border: none;
-
     background: transparent;
-
     font-size: 27px;
-
     cursor: pointer;
 }
 
 
-/* ==================================================
+/* =========================
    HERO
-================================================== */
+========================= */
 
 .hero {
     min-height: 100vh;
-
     position: relative;
 
     display: flex;
-
     align-items: center;
 
     padding: 130px 8% 80px;
 
     color: white;
-
     overflow: hidden;
 
     background:
         linear-gradient(
             135deg,
-            rgba(13, 67, 42, 0.90),
-            rgba(38, 105, 61, 0.65),
-            rgba(11, 54, 38, 0.85)
+            rgba(8,65,39,0.90),
+            rgba(45,120,70,0.60),
+            rgba(7,48,32,0.88)
         ),
         url("img/desa.jpg");
 
     background-size: cover;
-
     background-position: center;
 }
 
-
-/* Lingkaran dekorasi */
-
 .hero::before {
     content: "";
-
     position: absolute;
 
     width: 450px;
@@ -153,8 +117,7 @@ header {
 
     border-radius: 50%;
 
-    background:
-        rgba(190, 230, 155, 0.15);
+    background: rgba(190,230,155,0.15);
 
     filter: blur(5px);
 }
@@ -172,33 +135,25 @@ header {
 
     border-radius: 50%;
 
-    background:
-        rgba(150, 220, 170, 0.15);
+    background: rgba(150,220,170,0.15);
 }
 
 .hero-content {
     max-width: 760px;
-
     position: relative;
-
     z-index: 2;
 }
 
 .label {
     font-size: 13px;
-
     letter-spacing: 3px;
-
     font-weight: bold;
-
     margin-bottom: 18px;
 }
 
 .hero h1 {
     font-size: 62px;
-
     line-height: 1.08;
-
     margin-bottom: 25px;
 }
 
@@ -208,17 +163,13 @@ header {
 
 .hero-description {
     max-width: 680px;
-
     font-size: 18px;
-
     color: #edf8ee;
 }
 
 .buttons {
     display: flex;
-
     gap: 15px;
-
     margin-top: 32px;
 }
 
@@ -242,21 +193,18 @@ header {
 
 .utama {
     background: #68a953;
-
     color: white;
 
     box-shadow:
-        0 8px 20px rgba(50, 100, 55, 0.3);
+        0 8px 20px rgba(50,100,55,0.3);
 }
 
 .kedua {
-    border:
-        1px solid rgba(255,255,255,0.8);
+    border: 1px solid rgba(255,255,255,0.8);
 
     color: white;
 
-    background:
-        rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.08);
 }
 
 .scroll-down {
@@ -275,9 +223,9 @@ header {
 }
 
 
-/* ==================================================
+/* =========================
    STATISTIK
-================================================== */
+========================= */
 
 .stats {
     max-width: 1050px;
@@ -286,8 +234,7 @@ header {
 
     padding: 28px;
 
-    background:
-        rgba(255,255,255,0.96);
+    background: rgba(255,255,255,0.96);
 
     backdrop-filter: blur(10px);
 
@@ -295,8 +242,7 @@ header {
 
     display: grid;
 
-    grid-template-columns:
-        repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
 
     gap: 20px;
 
@@ -307,7 +253,7 @@ header {
     z-index: 10;
 
     box-shadow:
-        0 15px 40px rgba(28, 76, 43, 0.13);
+        0 15px 40px rgba(28,76,43,0.13);
 }
 
 .stat {
@@ -316,13 +262,10 @@ header {
 
 .stat-icon {
     font-size: 30px;
-
-    margin-bottom: 5px;
 }
 
 .stat h2 {
     font-size: 24px;
-
     color: #327548;
 }
 
@@ -331,9 +274,9 @@ header {
 }
 
 
-/* ==================================================
+/* =========================
    SECTION
-================================================== */
+========================= */
 
 .section {
     max-width: 1150px;
@@ -345,7 +288,6 @@ header {
 
 .title {
     text-align: center;
-
     margin-bottom: 55px;
 }
 
@@ -369,7 +311,6 @@ header {
 
 .title-line {
     width: 60px;
-
     height: 4px;
 
     margin: 17px auto 0;
@@ -380,15 +321,14 @@ header {
 }
 
 
-/* ==================================================
-   TENTANG DESA
-================================================== */
+/* =========================
+   TENTANG
+========================= */
 
 .about {
     display: grid;
 
-    grid-template-columns:
-        1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     gap: 60px;
 
@@ -409,7 +349,7 @@ header {
     border-radius: 30px;
 
     box-shadow:
-        0 20px 40px rgba(34, 81, 48, 0.15);
+        0 20px 40px rgba(34,81,48,0.15);
 }
 
 .image-badge {
@@ -420,8 +360,7 @@ header {
 
     padding: 12px 18px;
 
-    background:
-        rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.9);
 
     border-radius: 30px;
 
@@ -467,9 +406,9 @@ header {
 }
 
 
-/* ==================================================
+/* =========================
    KEUNGGULAN
-================================================== */
+========================= */
 
 .advantages {
     padding: 95px 25px;
@@ -500,7 +439,7 @@ header {
     border-radius: 50%;
 
     background:
-        rgba(108, 170, 100, 0.12);
+        rgba(108,170,100,0.12);
 }
 
 .cards {
@@ -511,7 +450,7 @@ header {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3,1fr);
 
     gap: 25px;
 
@@ -530,7 +469,7 @@ header {
     border-radius: 25px;
 
     box-shadow:
-        0 10px 30px rgba(40, 90, 50, 0.07);
+        0 10px 30px rgba(40,90,50,0.07);
 
     transition: 0.3s;
 }
@@ -539,18 +478,16 @@ header {
     transform: translateY(-10px);
 
     box-shadow:
-        0 18px 35px rgba(40, 90, 50, 0.14);
+        0 18px 35px rgba(40,90,50,0.14);
 }
 
 .card-icon {
     font-size: 45px;
-
     margin-bottom: 18px;
 }
 
 .card h3 {
     font-size: 22px;
-
     margin-bottom: 10px;
 }
 
@@ -559,15 +496,15 @@ header {
 }
 
 
-/* ==================================================
+/* =========================
    DUSUN
-================================================== */
+========================= */
 
 .dusun-container {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3,1fr);
 
     gap: 25px;
 }
@@ -579,8 +516,7 @@ header {
 
     border-radius: 25px;
 
-    border:
-        1px solid #dce8dd;
+    border: 1px solid #dce8dd;
 
     transition: 0.3s;
 
@@ -615,9 +551,9 @@ header {
 }
 
 
-/* ==================================================
+/* =========================
    FASILITAS
-================================================== */
+========================= */
 
 .facilities {
     padding: 95px 25px;
@@ -638,7 +574,7 @@ header {
     display: grid;
 
     grid-template-columns:
-        repeat(4, 1fr);
+        repeat(3,1fr);
 
     gap: 20px;
 }
@@ -656,7 +592,7 @@ header {
     transition: 0.3s;
 
     box-shadow:
-        0 8px 25px rgba(40, 90, 50, 0.06);
+        0 8px 25px rgba(40,90,50,0.06);
 }
 
 .facility:hover {
@@ -678,9 +614,9 @@ header {
 }
 
 
-/* ==================================================
-   TEMPAT PENTING DESA
-================================================== */
+/* =========================
+   TEMPAT PENTING
+========================= */
 
 .tempat-desa {
     padding: 100px 25px;
@@ -701,7 +637,7 @@ header {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3,1fr);
 
     gap: 28px;
 }
@@ -716,7 +652,7 @@ header {
     text-align: center;
 
     box-shadow:
-        0 10px 30px rgba(35, 80, 45, 0.08);
+        0 10px 30px rgba(35,80,45,0.08);
 
     transition: 0.35s;
 }
@@ -725,7 +661,7 @@ header {
     transform: translateY(-10px);
 
     box-shadow:
-        0 20px 40px rgba(35, 80, 45, 0.16);
+        0 20px 40px rgba(35,80,45,0.16);
 }
 
 .card-image {
@@ -738,7 +674,6 @@ header {
 
 .card-image img {
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
@@ -757,7 +692,7 @@ header {
     left: 15px;
 
     background:
-        rgba(25, 75, 45, 0.85);
+        rgba(25,75,45,0.85);
 
     color: white;
 
@@ -772,15 +707,13 @@ header {
 
 .tempat-icon {
     font-size: 40px;
-
     margin-top: 15px;
 }
 
 .tempat-card h3 {
     font-size: 22px;
 
-    margin:
-        5px 20px 10px;
+    margin: 5px 20px 10px;
 }
 
 .tempat-card p {
@@ -790,35 +723,19 @@ header {
 
     padding: 0 25px;
 
-    margin-bottom: 20px;
-}
-
-.tempat-card a {
-    display: inline-block;
-
     margin-bottom: 25px;
-
-    color: #39784f;
-
-    text-decoration: none;
-
-    font-weight: bold;
-}
-
-.tempat-card a:hover {
-    text-decoration: underline;
 }
 
 
-/* ==================================================
+/* =========================
    GALERI
-================================================== */
+========================= */
 
 .gallery {
     display: grid;
 
     grid-template-columns:
-        repeat(2, 1fr);
+        repeat(2,1fr);
 
     gap: 25px;
 }
@@ -838,7 +755,6 @@ header {
 
 .gallery-item img {
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
@@ -874,14 +790,12 @@ header {
 
 .gallery-caption p {
     font-size: 14px;
-
-    opacity: 0.9;
 }
 
 
-/* ==================================================
+/* =========================
    CTA
-================================================== */
+========================= */
 
 .cta {
     padding: 100px 25px;
@@ -903,43 +817,8 @@ header {
         );
 }
 
-.cta::before {
-    content: "";
-
-    position: absolute;
-
-    width: 350px;
-    height: 350px;
-
-    border-radius: 50%;
-
-    right: -120px;
-    top: -150px;
-
-    background:
-        rgba(255,255,255,0.08);
-}
-
-.cta::after {
-    content: "";
-
-    position: absolute;
-
-    width: 250px;
-    height: 250px;
-
-    border-radius: 50%;
-
-    left: -100px;
-    bottom: -130px;
-
-    background:
-        rgba(255,255,255,0.07);
-}
-
 .cta-content {
     position: relative;
-
     z-index: 2;
 }
 
@@ -962,15 +841,15 @@ header {
 }
 
 
-/* ==================================================
+/* =========================
    KONTAK
-================================================== */
+========================= */
 
 .contact {
     display: grid;
 
     grid-template-columns:
-        repeat(3, 1fr);
+        repeat(3,1fr);
 
     gap: 25px;
 }
@@ -1012,9 +891,9 @@ header {
 }
 
 
-/* ==================================================
+/* =========================
    FOOTER
-================================================== */
+========================= */
 
 footer {
     padding: 55px 20px;
@@ -1058,22 +937,18 @@ footer small {
 }
 
 
-/* ==================================================
+/* =========================
    ANIMASI SCROLL
-================================================== */
+========================= */
 
 .hidden {
     opacity: 0;
-
-    transform:
-        translateY(30px);
+    transform: translateY(30px);
 }
 
 .show {
     opacity: 1;
-
-    transform:
-        translateY(0);
+    transform: translateY(0);
 
     transition:
         opacity 0.7s ease,
@@ -1081,15 +956,11 @@ footer small {
 }
 
 
-/* ==================================================
+/* =========================
    TABLET
-================================================== */
+========================= */
 
 @media (max-width: 1000px) {
-
-    .nav-menu {
-        gap: 12px;
-    }
 
     .hero h1 {
         font-size: 50px;
@@ -1097,29 +968,26 @@ footer small {
 
     .facility-grid {
         grid-template-columns:
-            repeat(2, 1fr);
+            repeat(2,1fr);
     }
 
     .tempat-container {
         grid-template-columns:
-            repeat(2, 1fr);
+            repeat(2,1fr);
     }
 
 }
 
 
-/* ==================================================
+/* =========================
    HP
-================================================== */
+========================= */
 
 @media (max-width: 768px) {
 
     .navbar {
         padding: 16px 20px;
     }
-
-
-    /* MENU HP */
 
     .nav-menu {
         display: none;
@@ -1152,8 +1020,6 @@ footer small {
     }
 
 
-    /* HERO */
-
     .hero {
         padding:
             120px 25px
@@ -1170,16 +1036,13 @@ footer small {
 
     .buttons {
         flex-direction: column;
-
         align-items: flex-start;
     }
 
 
-    /* STATISTIK */
-
     .stats {
         grid-template-columns:
-            repeat(2, 1fr);
+            repeat(2,1fr);
 
         margin:
             -40px 20px
@@ -1187,11 +1050,8 @@ footer small {
     }
 
 
-    /* TENTANG */
-
     .about {
         grid-template-columns: 1fr;
-
         gap: 35px;
     }
 
@@ -1204,36 +1064,26 @@ footer small {
     }
 
 
-    /* KEUNGGULAN */
-
     .cards {
         grid-template-columns: 1fr;
     }
 
-
-    /* DUSUN */
 
     .dusun-container {
         grid-template-columns: 1fr;
     }
 
 
-    /* FASILITAS */
-
     .facility-grid {
         grid-template-columns:
-            repeat(2, 1fr);
+            repeat(2,1fr);
     }
 
-
-    /* TEMPAT */
 
     .tempat-container {
         grid-template-columns: 1fr;
     }
 
-
-    /* GALERI */
 
     .gallery {
         grid-template-columns: 1fr;
@@ -1244,21 +1094,15 @@ footer small {
     }
 
 
-    /* KONTAK */
-
     .contact {
         grid-template-columns: 1fr;
     }
 
 
-    /* JUDUL */
-
     .title h2 {
         font-size: 30px;
     }
 
-
-    /* CTA */
 
     .cta h2 {
         font-size: 30px;
@@ -1267,9 +1111,9 @@ footer small {
 }
 
 
-/* ==================================================
+/* =========================
    HP KECIL
-================================================== */
+========================= */
 
 @media (max-width: 450px) {
 
