@@ -1,7 +1,13 @@
 ```css
-/* =========================
+/* ==================================================
+   WEBSITE DESA SEBURING
+   STYLE.CSS LENGKAP
+================================================== */
+
+
+/* ==================================================
    RESET
-========================= */
+================================================== */
 
 * {
     margin: 0;
@@ -21,17 +27,19 @@ body {
 }
 
 
-/* =========================
+/* ==================================================
    NAVBAR
-========================= */
+================================================== */
 
 header {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
+
     z-index: 1000;
 
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.93);
 
     backdrop-filter: blur(12px);
 
@@ -41,30 +49,39 @@ header {
 
 .navbar {
     max-width: 1200px;
+
     margin: auto;
 
     padding: 17px 25px;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 }
 
 .logo {
     font-size: 23px;
+
     font-weight: bold;
+
     color: #28734b;
 }
 
 .nav-menu {
     display: flex;
+
     gap: 20px;
+
     list-style: none;
 }
 
 .nav-menu a {
     color: #26392d;
+
     text-decoration: none;
+
     font-weight: 600;
 
     transition: 0.3s;
@@ -78,6 +95,7 @@ header {
     display: none;
 
     border: none;
+
     background: transparent;
 
     font-size: 27px;
@@ -86,9 +104,9 @@ header {
 }
 
 
-/* =========================
-   HERO / BACKGROUND UTAMA
-========================= */
+/* ==================================================
+   HERO
+================================================== */
 
 .hero {
     min-height: 100vh;
@@ -96,6 +114,7 @@ header {
     position: relative;
 
     display: flex;
+
     align-items: center;
 
     padding: 130px 8% 80px;
@@ -107,15 +126,19 @@ header {
     background:
         linear-gradient(
             135deg,
-            rgba(13, 67, 42, 0.9),
+            rgba(13, 67, 42, 0.90),
             rgba(38, 105, 61, 0.65),
-            rgba(11, 54, 38, 0.8)
+            rgba(11, 54, 38, 0.85)
         ),
         url("img/desa.jpg");
 
     background-size: cover;
+
     background-position: center;
 }
+
+
+/* Lingkaran dekorasi */
 
 .hero::before {
     content: "";
@@ -130,7 +153,8 @@ header {
 
     border-radius: 50%;
 
-    background: rgba(190, 230, 155, 0.15);
+    background:
+        rgba(190, 230, 155, 0.15);
 
     filter: blur(5px);
 }
@@ -148,7 +172,8 @@ header {
 
     border-radius: 50%;
 
-    background: rgba(150, 220, 170, 0.15);
+    background:
+        rgba(150, 220, 170, 0.15);
 }
 
 .hero-content {
@@ -225,11 +250,13 @@ header {
 }
 
 .kedua {
-    border: 1px solid rgba(255,255,255,0.8);
+    border:
+        1px solid rgba(255,255,255,0.8);
 
     color: white;
 
-    background: rgba(255,255,255,0.08);
+    background:
+        rgba(255,255,255,0.08);
 }
 
 .scroll-down {
@@ -248,9 +275,9 @@ header {
 }
 
 
-/* =========================
+/* ==================================================
    STATISTIK
-========================= */
+================================================== */
 
 .stats {
     max-width: 1050px;
@@ -259,7 +286,8 @@ header {
 
     padding: 28px;
 
-    background: rgba(255,255,255,0.96);
+    background:
+        rgba(255,255,255,0.96);
 
     backdrop-filter: blur(10px);
 
@@ -303,9 +331,9 @@ header {
 }
 
 
-/* =========================
+/* ==================================================
    SECTION
-========================= */
+================================================== */
 
 .section {
     max-width: 1150px;
@@ -341,6 +369,7 @@ header {
 
 .title-line {
     width: 60px;
+
     height: 4px;
 
     margin: 17px auto 0;
@@ -351,9 +380,9 @@ header {
 }
 
 
-/* =========================
-   TENTANG
-========================= */
+/* ==================================================
+   TENTANG DESA
+================================================== */
 
 .about {
     display: grid;
@@ -391,7 +420,8 @@ header {
 
     padding: 12px 18px;
 
-    background: rgba(255,255,255,0.9);
+    background:
+        rgba(255,255,255,0.9);
 
     border-radius: 30px;
 
@@ -437,9 +467,9 @@ header {
 }
 
 
-/* =========================
+/* ==================================================
    KEUNGGULAN
-========================= */
+================================================== */
 
 .advantages {
     padding: 95px 25px;
@@ -469,7 +499,8 @@ header {
 
     border-radius: 50%;
 
-    background: rgba(108, 170, 100, 0.12);
+    background:
+        rgba(108, 170, 100, 0.12);
 }
 
 .cards {
@@ -490,9 +521,11 @@ header {
 .card {
     padding: 38px 30px;
 
-    background: rgba(255,255,255,0.88);
+    background:
+        rgba(255,255,255,0.88);
 
-    border: 1px solid rgba(120,160,120,0.15);
+    border:
+        1px solid rgba(120,160,120,0.15);
 
     border-radius: 25px;
 
@@ -526,9 +559,9 @@ header {
 }
 
 
-/* =========================
+/* ==================================================
    DUSUN
-========================= */
+================================================== */
 
 .dusun-container {
     display: grid;
@@ -546,7 +579,8 @@ header {
 
     border-radius: 25px;
 
-    border: 1px solid #dce8dd;
+    border:
+        1px solid #dce8dd;
 
     transition: 0.3s;
 
@@ -581,9 +615,9 @@ header {
 }
 
 
-/* =========================
+/* ==================================================
    FASILITAS
-========================= */
+================================================== */
 
 .facilities {
     padding: 95px 25px;
@@ -612,7 +646,8 @@ header {
 .facility {
     padding: 32px 20px;
 
-    background: rgba(255,255,255,0.9);
+    background:
+        rgba(255,255,255,0.9);
 
     border-radius: 23px;
 
@@ -643,9 +678,9 @@ header {
 }
 
 
-/* =========================
-   TEMPAT PENTING
-========================= */
+/* ==================================================
+   TEMPAT PENTING DESA
+================================================== */
 
 .tempat-desa {
     padding: 100px 25px;
@@ -703,6 +738,7 @@ header {
 
 .card-image img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -720,7 +756,8 @@ header {
     top: 15px;
     left: 15px;
 
-    background: rgba(25, 75, 45, 0.85);
+    background:
+        rgba(25, 75, 45, 0.85);
 
     color: white;
 
@@ -742,7 +779,8 @@ header {
 .tempat-card h3 {
     font-size: 22px;
 
-    margin: 5px 20px 10px;
+    margin:
+        5px 20px 10px;
 }
 
 .tempat-card p {
@@ -772,9 +810,9 @@ header {
 }
 
 
-/* =========================
+/* ==================================================
    GALERI
-========================= */
+================================================== */
 
 .gallery {
     display: grid;
@@ -800,6 +838,7 @@ header {
 
 .gallery-item img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
@@ -840,9 +879,9 @@ header {
 }
 
 
-/* =========================
+/* ==================================================
    CTA
-========================= */
+================================================== */
 
 .cta {
     padding: 100px 25px;
@@ -877,7 +916,8 @@ header {
     right: -120px;
     top: -150px;
 
-    background: rgba(255,255,255,0.08);
+    background:
+        rgba(255,255,255,0.08);
 }
 
 .cta::after {
@@ -893,7 +933,8 @@ header {
     left: -100px;
     bottom: -130px;
 
-    background: rgba(255,255,255,0.07);
+    background:
+        rgba(255,255,255,0.07);
 }
 
 .cta-content {
@@ -921,9 +962,9 @@ header {
 }
 
 
-/* =========================
+/* ==================================================
    KONTAK
-========================= */
+================================================== */
 
 .contact {
     display: grid;
@@ -943,7 +984,8 @@ header {
 
     border-radius: 25px;
 
-    border: 1px solid #e0e9e0;
+    border:
+        1px solid #e0e9e0;
 
     transition: 0.3s;
 }
@@ -970,9 +1012,9 @@ header {
 }
 
 
-/* =========================
+/* ==================================================
    FOOTER
-========================= */
+================================================== */
 
 footer {
     padding: 55px 20px;
@@ -1016,9 +1058,32 @@ footer small {
 }
 
 
-/* =========================
+/* ==================================================
+   ANIMASI SCROLL
+================================================== */
+
+.hidden {
+    opacity: 0;
+
+    transform:
+        translateY(30px);
+}
+
+.show {
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+/* ==================================================
    TABLET
-========================= */
+================================================== */
 
 @media (max-width: 1000px) {
 
@@ -1043,15 +1108,18 @@ footer small {
 }
 
 
-/* =========================
+/* ==================================================
    HP
-========================= */
+================================================== */
 
 @media (max-width: 768px) {
 
     .navbar {
         padding: 16px 20px;
     }
+
+
+    /* MENU HP */
 
     .nav-menu {
         display: none;
@@ -1084,6 +1152,8 @@ footer small {
     }
 
 
+    /* HERO */
+
     .hero {
         padding:
             120px 25px
@@ -1105,6 +1175,8 @@ footer small {
     }
 
 
+    /* STATISTIK */
+
     .stats {
         grid-template-columns:
             repeat(2, 1fr);
@@ -1114,6 +1186,8 @@ footer small {
             20px;
     }
 
+
+    /* TENTANG */
 
     .about {
         grid-template-columns: 1fr;
@@ -1130,15 +1204,21 @@ footer small {
     }
 
 
+    /* KEUNGGULAN */
+
     .cards {
         grid-template-columns: 1fr;
     }
 
 
+    /* DUSUN */
+
     .dusun-container {
         grid-template-columns: 1fr;
     }
 
+
+    /* FASILITAS */
 
     .facility-grid {
         grid-template-columns:
@@ -1146,30 +1226,39 @@ footer small {
     }
 
 
+    /* TEMPAT */
+
     .tempat-container {
         grid-template-columns: 1fr;
     }
 
 
+    /* GALERI */
+
     .gallery {
         grid-template-columns: 1fr;
     }
-
 
     .gallery-item {
         height: 280px;
     }
 
 
+    /* KONTAK */
+
     .contact {
         grid-template-columns: 1fr;
     }
 
 
+    /* JUDUL */
+
     .title h2 {
         font-size: 30px;
     }
 
+
+    /* CTA */
 
     .cta h2 {
         font-size: 30px;
@@ -1178,9 +1267,9 @@ footer small {
 }
 
 
-/* =========================
+/* ==================================================
    HP KECIL
-========================= */
+================================================== */
 
 @media (max-width: 450px) {
 
@@ -1194,6 +1283,15 @@ footer small {
 
     .hero h1 {
         font-size: 34px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .section {
+        padding:
+            75px 20px;
     }
 
 }
