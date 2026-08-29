@@ -4,20 +4,18 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Desa Seburing</title>
+    <title>Desa Seburing | Pesona Desa</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <header>
+    <!-- ================= NAVBAR ================= -->
 
+    <header>
         <nav class="navbar">
 
             <div class="logo">
@@ -26,73 +24,56 @@
 
             <ul class="nav-menu">
 
-                <li>
-                    <a href="#beranda">Beranda</a>
-                </li>
-
-                <li>
-                    <a href="#tentang">Tentang</a>
-                </li>
-
-                <li>
-                    <a href="#dusun">Dusun</a>
-                </li>
-
-                <li>
-                    <a href="#fasilitas">Fasilitas</a>
-                </li>
-
-                <li>
-                    <a href="#galeri">Galeri</a>
-                </li>
-
-                <li>
-                    <a href="#kontak">Kontak</a>
-                </li>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#dusun">Dusun</a></li>
+                <li><a href="#fasilitas">Fasilitas</a></li>
+                <li><a href="#tempat">Tempat</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Kontak</a></li>
 
             </ul>
 
-            <button class="menu-btn"
-                    onclick="toggleMenu()">
+            <button class="menu-btn" onclick="toggleMenu()">
                 ☰
             </button>
 
         </nav>
-
     </header>
 
 
-    <!-- BERANDA -->
+    <!-- ================= HERO ================= -->
+
     <section class="hero" id="beranda">
+
+        <div class="hero-overlay"></div>
 
         <div class="hero-content">
 
             <p class="label">
-                DESA SEBURING
+                🌿 DESA SEBURING • KABUPATEN SAMBAS
             </p>
 
             <h1>
                 Mengenal
-                <span>Keindahan Desa</span>
-                Seburing
+                <span>Keindahan</span>
+                Desa Seburing
             </h1>
 
-            <p>
-                Selamat datang di Desa Seburing.
-                Mari mengenal keindahan alam,
-                kehidupan masyarakat dan budaya
+            <p class="hero-description">
+                Selamat datang di website Desa Seburing.
+                Temukan keindahan alam, kehidupan masyarakat,
+                fasilitas, budaya, dan berbagai tempat menarik
                 yang ada di desa kami.
             </p>
 
             <div class="buttons">
 
-                <a href="#tentang"
-                   class="btn utama">
+                <a href="#tentang" class="btn utama">
                     Jelajahi Desa
                 </a>
 
-                <a href="#galeri"
-                   class="btn kedua">
+                <a href="#galeri" class="btn kedua">
                     Lihat Galeri
                 </a>
 
@@ -100,71 +81,57 @@
 
         </div>
 
+        <div class="scroll-down">
+            ↓ Scroll untuk menjelajah
+        </div>
+
     </section>
 
 
-    <!-- STATISTIK -->
+    <!-- ================= STATISTIK ================= -->
+
     <section class="stats">
 
         <div class="stat">
-
+            <div class="stat-icon">🏘️</div>
             <h2>3</h2>
-
-            <p>
-                Dusun
-            </p>
-
+            <p>Dusun</p>
         </div>
 
-
         <div class="stat">
-
-            <h2>🌾</h2>
-
-            <p>
-                Desa Agraris
-            </p>
-
+            <div class="stat-icon">🌾</div>
+            <h2>Desa</h2>
+            <p>Agraris</p>
         </div>
 
-
         <div class="stat">
-
-            <h2>🤝</h2>
-
-            <p>
-                Gotong Royong
-            </p>
-
+            <div class="stat-icon">🤝</div>
+            <h2>Gotong</h2>
+            <p>Royong</p>
         </div>
 
-
         <div class="stat">
-
-            <h2>🌿</h2>
-
-            <p>
-                Alam Asri
-            </p>
-
+            <div class="stat-icon">🌿</div>
+            <h2>Alam</h2>
+            <p>Asri</p>
         </div>
 
     </section>
 
 
-    <!-- TENTANG -->
-    <section class="section"
-             id="tentang">
+    <!-- ================= TENTANG ================= -->
+
+    <section class="section" id="tentang">
 
         <div class="title">
 
-            <p>
-                TENTANG DESA
-            </p>
+            <p>TENTANG DESA</p>
 
             <h2>
                 Mengenal Desa Seburing
             </h2>
+
+            <div class="title-line"></div>
 
         </div>
 
@@ -174,35 +141,61 @@
             <div class="about-img">
 
                 <img src="img/desa.jpg"
-                     alt="Desa Seburing">
+                     alt="Pemandangan Desa Seburing">
+
+                <div class="image-badge">
+                    🌿 Pesona Seburing
+                </div>
 
             </div>
 
 
             <div class="about-text">
 
+                <span class="small-title">
+                    TENTANG KAMI
+                </span>
+
                 <h3>
-                    Desa yang penuh kebersamaan
+                    Desa yang indah,
+                    nyaman dan penuh kebersamaan.
                 </h3>
 
                 <p>
-                    Desa Seburing merupakan salah satu
-                    desa yang berada di Kabupaten Sambas,
+                    Desa Seburing merupakan salah satu desa
+                    yang berada di Kabupaten Sambas,
                     Kalimantan Barat.
                 </p>
 
                 <p>
-                    Desa ini memiliki suasana yang
-                    nyaman dengan lingkungan yang masih
-                    alami dan kehidupan masyarakat
-                    yang penuh kebersamaan.
+                    Desa ini memiliki suasana yang nyaman
+                    dengan lingkungan yang masih alami.
+                    Kehidupan masyarakat yang penuh
+                    kebersamaan menjadi salah satu
+                    keindahan Desa Seburing.
                 </p>
 
                 <p>
-                    Masyarakat Desa Seburing juga
-                    menjunjung tinggi semangat gotong
-                    royong dan menjaga lingkungan sekitar.
+                    Semangat gotong royong dan kepedulian
+                    terhadap lingkungan terus dijaga oleh
+                    masyarakat desa.
                 </p>
+
+                <div class="about-points">
+
+                    <div>
+                        ✓ Lingkungan yang asri
+                    </div>
+
+                    <div>
+                        ✓ Masyarakat yang ramah
+                    </div>
+
+                    <div>
+                        ✓ Semangat gotong royong
+                    </div>
+
+                </div>
 
             </div>
 
@@ -211,18 +204,19 @@
     </section>
 
 
-    <!-- KEUNGGULAN -->
+    <!-- ================= KEUNGGULAN ================= -->
+
     <section class="advantages">
 
         <div class="title">
 
-            <p>
-                KEUNGGULAN
-            </p>
+            <p>KEUNGGULAN DESA</p>
 
             <h2>
                 Apa yang menarik dari Seburing?
             </h2>
+
+            <div class="title-line"></div>
 
         </div>
 
@@ -241,7 +235,8 @@
 
                 <p>
                     Lingkungan desa yang masih hijau
-                    memberikan suasana yang nyaman.
+                    memberikan suasana yang nyaman
+                    dan menyegarkan.
                 </p>
 
             </div>
@@ -259,7 +254,8 @@
 
                 <p>
                     Semangat kebersamaan dan gotong
-                    royong masih terus dijaga.
+                    royong terus dijaga oleh
+                    masyarakat Desa Seburing.
                 </p>
 
             </div>
@@ -277,7 +273,8 @@
 
                 <p>
                     Pertanian menjadi salah satu
-                    kegiatan masyarakat desa.
+                    kegiatan penting dalam kehidupan
+                    masyarakat desa.
                 </p>
 
             </div>
@@ -287,19 +284,19 @@
     </section>
 
 
-    <!-- DUSUN -->
-    <section class="section"
-             id="dusun">
+    <!-- ================= DUSUN ================= -->
+
+    <section class="section" id="dusun">
 
         <div class="title">
 
-            <p>
-                WILAYAH
-            </p>
+            <p>WILAYAH DESA</p>
 
             <h2>
                 Dusun di Desa Seburing
             </h2>
+
+            <div class="title-line"></div>
 
         </div>
 
@@ -308,9 +305,7 @@
 
             <div class="dusun">
 
-                <span>
-                    01
-                </span>
+                <span>01</span>
 
                 <h3>
                     Dusun Kartini
@@ -326,9 +321,7 @@
 
             <div class="dusun">
 
-                <span>
-                    02
-                </span>
+                <span>02</span>
 
                 <h3>
                     Dusun Mulia
@@ -344,9 +337,7 @@
 
             <div class="dusun">
 
-                <span>
-                    03
-                </span>
+                <span>03</span>
 
                 <h3>
                     Dusun Makmur
@@ -364,19 +355,19 @@
     </section>
 
 
-    <!-- FASILITAS -->
-    <section class="facilities"
-             id="fasilitas">
+    <!-- ================= FASILITAS ================= -->
+
+    <section class="facilities" id="fasilitas">
 
         <div class="title">
 
-            <p>
-                FASILITAS
-            </p>
+            <p>FASILITAS DESA</p>
 
             <h2>
-                Fasilitas Desa
+                Fasilitas Desa Seburing
             </h2>
+
+            <div class="title-line"></div>
 
         </div>
 
@@ -384,74 +375,42 @@
         <div class="facility-grid">
 
             <div class="facility">
-
-                <div>
-                    🏫
-                </div>
-
-                <h3>
-                    Pendidikan
-                </h3>
-
+                <div class="facility-icon">🏫</div>
+                <h3>Pendidikan</h3>
                 <p>
                     Fasilitas pendidikan untuk
-                    masyarakat.
+                    masyarakat desa.
                 </p>
-
             </div>
 
 
             <div class="facility">
-
-                <div>
-                    🕌
-                </div>
-
-                <h3>
-                    Tempat Ibadah
-                </h3>
-
+                <div class="facility-icon">🕌</div>
+                <h3>Tempat Ibadah</h3>
                 <p>
                     Tempat masyarakat melaksanakan
                     kegiatan keagamaan.
                 </p>
-
             </div>
 
 
             <div class="facility">
-
-                <div>
-                    🏠
-                </div>
-
-                <h3>
-                    Kantor Desa
-                </h3>
-
+                <div class="facility-icon">🏠</div>
+                <h3>Kantor Desa</h3>
                 <p>
                     Pusat pelayanan administrasi
-                    masyarakat desa.
+                    masyarakat.
                 </p>
-
             </div>
 
 
             <div class="facility">
-
-                <div>
-                    🌾
-                </div>
-
-                <h3>
-                    Pertanian
-                </h3>
-
+                <div class="facility-icon">🌾</div>
+                <h3>Pertanian</h3>
                 <p>
                     Area pertanian dan perkebunan
                     masyarakat.
                 </p>
-
             </div>
 
         </div>
@@ -459,82 +418,354 @@
     </section>
 
 
-    <!-- GALERI -->
-    <section class="section"
-             id="galeri">
+    <!-- ================= TEMPAT PENTING ================= -->
+
+    <section class="tempat-desa" id="tempat">
 
         <div class="title">
 
-            <p>
-                GALERI
-            </p>
+            <p>TEMPAT PENTING DESA</p>
+
+            <h2>
+                Fasilitas & Tempat Penting
+            </h2>
+
+            <div class="title-line"></div>
+
+        </div>
+
+
+        <div class="tempat-container">
+
+
+            <!-- SEKOLAH -->
+
+            <div class="tempat-card">
+
+                <div class="card-image">
+
+                    <img src="img/sekolah.jpg"
+                         alt="Sekolah Desa Seburing">
+
+                    <span class="number">
+                        01
+                    </span>
+
+                </div>
+
+                <div class="tempat-icon">
+                    🏫
+                </div>
+
+                <h3>
+                    Sekolah
+                </h3>
+
+                <p>
+                    Tempat bagi anak-anak Desa Seburing
+                    untuk mendapatkan pendidikan dan
+                    mengembangkan kemampuan.
+                </p>
+
+                <a href="#kontak">
+                    Informasi Sekolah →
+                </a>
+
+            </div>
+
+
+            <!-- MASJID -->
+
+            <div class="tempat-card">
+
+                <div class="card-image">
+
+                    <img src="img/masjid.jpg"
+                         alt="Masjid Desa Seburing">
+
+                    <span class="number">
+                        02
+                    </span>
+
+                </div>
+
+                <div class="tempat-icon">
+                    🕌
+                </div>
+
+                <h3>
+                    Masjid
+                </h3>
+
+                <p>
+                    Tempat ibadah sekaligus tempat
+                    berbagai kegiatan keagamaan
+                    masyarakat desa.
+                </p>
+
+                <a href="#kontak">
+                    Informasi Masjid →
+                </a>
+
+            </div>
+
+
+            <!-- BALAI DESA -->
+
+            <div class="tempat-card">
+
+                <div class="card-image">
+
+                    <img src="img/balai-desa.jpg"
+                         alt="Balai Desa Seburing">
+
+                    <span class="number">
+                        03
+                    </span>
+
+                </div>
+
+                <div class="tempat-icon">
+                    🏛️
+                </div>
+
+                <h3>
+                    Balai Desa
+                </h3>
+
+                <p>
+                    Tempat pelayanan masyarakat,
+                    musyawarah dan berbagai
+                    kegiatan desa.
+                </p>
+
+                <a href="#kontak">
+                    Informasi Balai Desa →
+                </a>
+
+            </div>
+
+
+            <!-- KOPERASI -->
+
+            <div class="tempat-card">
+
+                <div class="card-image">
+
+                    <img src="img/koperasi-merah-putih.jpg"
+                         alt="Koperasi Merah Putih">
+
+                    <span class="number">
+                        04
+                    </span>
+
+                </div>
+
+                <div class="tempat-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Koperasi Merah Putih
+                </h3>
+
+                <p>
+                    Bagian dari kegiatan ekonomi
+                    masyarakat dan mendukung
+                    perekonomian desa.
+                </p>
+
+                <a href="#kontak">
+                    Informasi Koperasi →
+                </a>
+
+            </div>
+
+
+            <!-- LAPANGAN BOLA -->
+
+            <div class="tempat-card">
+
+                <div class="card-image">
+
+                    <img src="img/lapangan-bola.jpg"
+                         alt="Lapangan Bola Desa Seburing">
+
+                    <span class="number">
+                        05
+                    </span>
+
+                </div>
+
+                <div class="tempat-icon">
+                    ⚽
+                </div>
+
+                <h3>
+                    Lapangan Bola
+                </h3>
+
+                <p>
+                    Tempat olahraga dan kegiatan
+                    masyarakat, khususnya bagi
+                    anak-anak dan pemuda desa.
+                </p>
+
+                <a href="#kontak">
+                    Informasi Lapangan →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALERI ================= -->
+
+    <section class="section" id="galeri">
+
+        <div class="title">
+
+            <p>GALERI</p>
 
             <h2>
                 Keindahan Desa Seburing
             </h2>
+
+            <div class="title-line"></div>
 
         </div>
 
 
         <div class="gallery">
 
-            <img src="img/sungai.jpg"
-                 alt="Sungai Desa">
 
-            <img src="img/sawah.jpg"
-                 alt="Sawah Desa">
+            <div class="gallery-item">
 
-            <img src="img/jembatan.jpg"
-                 alt="Jembatan Desa">
+                <img src="img/sungai.jpg"
+                     alt="Sungai Desa Seburing">
 
-            <img src="img/kegiatan.jpg"
-                 alt="Kegiatan Desa">
+                <div class="gallery-caption">
+                    <h3>
+                        Sungai Desa
+                    </h3>
+
+                    <p>
+                        Keindahan alam Seburing
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img src="img/sawah.jpg"
+                     alt="Sawah Desa Seburing">
+
+                <div class="gallery-caption">
+                    <h3>
+                        Sawah
+                    </h3>
+
+                    <p>
+                        Area pertanian masyarakat
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img src="img/jembatan-gantung.jpg"
+                     alt="Jembatan Gantung Desa Seburing">
+
+                <div class="gallery-caption">
+                    <h3>
+                        Jembatan Gantung
+                    </h3>
+
+                    <p>
+                        Salah satu bagian dari desa
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img src="img/kegiatan.jpg"
+                     alt="Kegiatan Masyarakat Desa Seburing">
+
+                <div class="gallery-caption">
+                    <h3>
+                        Kegiatan Masyarakat
+                    </h3>
+
+                    <p>
+                        Kebersamaan warga desa
+                    </p>
+                </div>
+
+            </div>
+
 
         </div>
 
     </section>
 
 
-    <!-- CTA -->
+    <!-- ================= CTA ================= -->
+
     <section class="cta">
 
-        <p>
-            PESONA DESA SEBURING
-        </p>
+        <div class="cta-content">
 
-        <h2>
-            Mari mengenal dan menjaga
-            keindahan desa kita.
-        </h2>
+            <p>
+                🌿 PESONA DESA SEBURING
+            </p>
 
-        <a href="#kontak"
-           class="btn utama">
-            Informasi Desa
-        </a>
+            <h2>
+                Mari mengenal dan menjaga
+                keindahan desa kita.
+            </h2>
+
+            <a href="#kontak"
+               class="btn utama">
+                Informasi Desa
+            </a>
+
+        </div>
 
     </section>
 
 
-    <!-- KONTAK -->
-    <section class="section"
-             id="kontak">
+    <!-- ================= KONTAK ================= -->
+
+    <section class="section" id="kontak">
 
         <div class="title">
 
-            <p>
-                INFORMASI
-            </p>
+            <p>INFORMASI</p>
 
             <h2>
                 Kontak Desa Seburing
             </h2>
+
+            <div class="title-line"></div>
 
         </div>
 
 
         <div class="contact">
 
-            <div>
+
+            <div class="contact-card">
 
                 <span>📍</span>
 
@@ -551,7 +782,7 @@
             </div>
 
 
-            <div>
+            <div class="contact-card">
 
                 <span>📞</span>
 
@@ -560,13 +791,14 @@
                 </h3>
 
                 <p>
-                    Masukkan nomor telepon desa.
+                    Silakan masukkan nomor
+                    telepon desa.
                 </p>
 
             </div>
 
 
-            <div>
+            <div class="contact-card">
 
                 <span>✉️</span>
 
@@ -575,33 +807,40 @@
                 </h3>
 
                 <p>
-                    Masukkan email desa.
+                    Silakan masukkan email desa.
                 </p>
 
             </div>
+
 
         </div>
 
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
-        <h2>
-            🌿 Desa Seburing
-        </h2>
+        <div class="footer-content">
 
-        <p>
-            Mengenalkan keindahan,
-            budaya dan masyarakat Desa Seburing.
-        </p>
+            <h2>
+                🌿 Desa Seburing
+            </h2>
 
-        <hr>
+            <p>
+                Mengenalkan keindahan alam,
+                fasilitas, budaya dan masyarakat
+                Desa Seburing.
+            </p>
 
-        <small>
-            © 2026 Desa Seburing
-        </small>
+            <div class="footer-line"></div>
+
+            <small>
+                © 2026 Desa Seburing. All Rights Reserved.
+            </small>
+
+        </div>
 
     </footer>
 
