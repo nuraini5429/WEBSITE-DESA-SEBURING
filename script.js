@@ -1,54 +1,48 @@
 ```javascript
-// ==============================
-// MENU MOBILE
-// ==============================
+/* ==================================================
+   MENU MOBILE
+================================================== */
 
-function toggleMenu() {
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
 
-    const menu =
-        document.querySelector(".nav-menu");
+menuBtn.addEventListener("click", function () {
 
-    menu.classList.toggle("active");
+    navMenu.classList.toggle("active");
 
-}
+});
 
 
-// ==============================
-// MENU OTOMATIS TERTUTUP
-// ==============================
+/* ==================================================
+   TUTUP MENU SETELAH LINK DIKLIK
+================================================== */
 
-const links =
+const navLinks =
     document.querySelectorAll(".nav-menu a");
 
-links.forEach(function(link) {
+navLinks.forEach(function (link) {
 
-    link.addEventListener("click", function() {
+    link.addEventListener("click", function () {
 
-        document
-            .querySelector(".nav-menu")
-            .classList
-            .remove("active");
+        navMenu.classList.remove("active");
 
     });
 
 });
 
 
-// ==============================
-// ANIMASI SAAT SCROLL
-// ==============================
+/* ==================================================
+   ANIMASI SCROLL
+================================================== */
 
-const cards =
-    document.querySelectorAll(
-        ".card, .tempat-card, .facility, .dusun, .contact-card"
-    );
-
+const hiddenElements =
+    document.querySelectorAll(".hidden");
 
 const observer =
     new IntersectionObserver(
-        function(entries) {
+        function (entries) {
 
-            entries.forEach(function(entry) {
+            entries.forEach(function (entry) {
 
                 if (entry.isIntersecting) {
 
@@ -65,11 +59,9 @@ const observer =
     );
 
 
-cards.forEach(function(card) {
+hiddenElements.forEach(function (element) {
 
-    card.classList.add("hidden");
-
-    observer.observe(card);
+    observer.observe(element);
 
 });
 ```
