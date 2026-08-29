@@ -1,0 +1,589 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9f5;
+    color: #24372b;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    background: white;
+
+    box-shadow:
+        0 3px 15px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #28734b;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #24372b;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #5b9d5b;
+}
+
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding: 130px 8%;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(20,65,40,0.65),
+            rgba(20,65,40,0.65)
+        ),
+        url("img/desa.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.label {
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #b7e59c;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.utama {
+    background: #69a653;
+    color: white;
+}
+
+.kedua {
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* =========================
+   STATISTIK
+========================= */
+
+.stats {
+    max-width: 1050px;
+
+    margin: -55px auto 60px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    text-align: center;
+
+    position: relative;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.1);
+}
+
+.stat h2 {
+    font-size: 30px;
+    color: #397c50;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 90px 25px;
+}
+
+.title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.title p {
+    color: #5c9c55;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.title h2 {
+    font-size: 38px;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   TENTANG
+========================= */
+
+.about {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.about-img img {
+    width: 100%;
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+
+.about-text h3 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #68756d;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   KEUNGGULAN
+========================= */
+
+.advantages {
+    background: #e9f2e4;
+
+    padding: 90px 25px;
+}
+
+.cards {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   DUSUN
+========================= */
+
+.dusun-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.dusun {
+    padding: 35px;
+
+    background: white;
+
+    border: 1px solid #dce7dc;
+
+    border-radius: 20px;
+}
+
+.dusun span {
+    color: #69a653;
+
+    font-weight: bold;
+}
+
+.dusun h3 {
+    font-size: 27px;
+
+    margin: 10px 0;
+}
+
+
+/* =========================
+   FASILITAS
+========================= */
+
+.facilities {
+    padding: 90px 25px;
+
+    background: #eff5eb;
+}
+
+.facility-grid {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.facility {
+    padding: 30px 20px;
+
+    background: white;
+
+    text-align: center;
+
+    border-radius: 20px;
+}
+
+.facility div {
+    font-size: 40px;
+}
+
+.facility h3 {
+    margin: 10px 0;
+}
+
+
+/* =========================
+   GALERI
+========================= */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    padding: 90px 25px;
+
+    text-align: center;
+
+    background: #285b3e;
+
+    color: white;
+}
+
+.cta h2 {
+    max-width: 700px;
+
+    margin: 15px auto 30px;
+
+    font-size: 40px;
+}
+
+
+/* =========================
+   KONTAK
+========================= */
+
+.contact {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.contact div {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.contact span {
+    font-size: 35px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 50px 20px;
+
+    text-align: center;
+
+    background: #173b29;
+
+    color: white;
+}
+
+footer p {
+    color: #cbd7ce;
+
+    margin: 10px 0 25px;
+}
+
+footer hr {
+    max-width: 500px;
+
+    margin: 20px auto;
+
+    border: 0;
+
+    border-top: 1px solid #476352;
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .dusun-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .facility-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+
+    .title h2 {
+        font-size: 30px;
+    }
+
+}
+```
